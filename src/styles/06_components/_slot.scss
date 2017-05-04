@@ -46,9 +46,7 @@ a:hover {
 /*
 * Watch
 */
-#watch {
-    background-color: #ccc;
-}
+#watch {}
 
 #watch h1 {
     margin: 0;
@@ -67,7 +65,7 @@ a:hover {
 
 #watch1 > div {
     color    : #fff;
-    height   : 200px;
+    height   : 300px;
     font-size: 55px;
 }
 
@@ -213,16 +211,6 @@ body {
     transform: translateY(270px);
 }
 
-.jugador-border {
-    // width        : 98px;
-    // height       : 114px;
-    // position     : absolute;
-    // top          : 70px;
-    // left         : 97px;
-    // border-right : 3px solid $yellow;
-    // border-bottom: 3px solid $yellow;
-}
-
 .pl-10 {
     padding-left: 10px;
 }
@@ -237,4 +225,16 @@ body {
 
 input {
     outline: 0;
+}
+
+#detectedFaces {
+    img {
+        width: 100% !important;
+    }
+}
+
+.jugadores-img {
+    img {
+        width: 383px;
+    }
 }
