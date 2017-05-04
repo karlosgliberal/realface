@@ -22,8 +22,8 @@ window.URL = window.URL ||
 window.webkitURL ||
 window.msURL ||
 window.mozURL;
-
 var j;
+
 function sendFrameLoop() {
   if (socket == null || socket.readyState != socket.OPEN ||
     !vidReady || numNulls != defaultNumNulls) {
@@ -126,7 +126,6 @@ function sendFrameLoop() {
         var h = "Last updated: " + (new Date()).toTimeString();
         h += "<ul>";
         var len = j.identities.length
-        console.log(j.identities[0]);
         if (len > 0) {
           for (var i = 0; i < len; i++) {
             var identity = "Unknown";
@@ -179,6 +178,24 @@ function sendFrameLoop() {
     vid.play();
     vidReady = true;
     sendFrameLoop();
+    function move() {
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            elem.innerHTML = width * 1 + '%';
+        }
+    }
+}
+move();
+    setInterval(function(){
+       vid.pause();
+    }, 10000);
   }
 
   $("#slotMachineButtonPrev").click(function(){
@@ -204,9 +221,20 @@ function sendFrameLoop() {
     $("#botonEntrada").click(function(){
       $('#intro').addClass('hidden');
       $('#jugadores').show('fast');
+
     });
 
     $('input:radio').click(function() {
+
+      if (navigator.getUserMedia) {
+        var videoSelector = {video : true};
+        navigator.getUserMedia(videoSelector, umSuccess, function() {
+          alert("Error fetching video from webcam");
+        });
+      } else {
+        alert("No webcam detected.");
+      }
+
       console.log('hola');
       var eleccionJugador = $(this).val();
       $('#jugadores').hide();

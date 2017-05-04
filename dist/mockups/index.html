@@ -118,10 +118,13 @@
                 <img src="../images/cristiano.jpg">
                 <img src="../images/marcelo.jpg">
                 <img src="../images/modric.jpg">
-                  <img src="../images/pepe.jpg">
-                  <img src="../images/ramos.jpg">
+                <img src="../images/pepe.jpg">
+                <img src="../images/ramos.jpg">
               </div>
             </div>
+          </div>
+          <div id="myProgress">
+            <div id="myBar"></div>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -153,14 +156,7 @@ var numNulls, sentTimes, receivedTimes;
 var socket, socketName;
 
 
-if (navigator.getUserMedia) {
-  var videoSelector = {video : true};
-  navigator.getUserMedia(videoSelector, umSuccess, function() {
-    alert("Error fetching video from webcam");
-  });
-} else {
-  alert("No webcam detected.");
-}
+
 
 // createSocket("ws://facerec.cmusatyalab.org:9000", "CMU");
 createSocket("ws://realface.biko2.info", "Local");
