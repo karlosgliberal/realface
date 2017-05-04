@@ -1,17 +1,8 @@
 p {
-  margin-bottom: 0;
-  // text-align   : justify;
-  &:not([class]) {
-    margin: 0 0 spacing(-1);
-  }
+    font-family  : $font-roboto;
+    margin-bottom: 0;
+    // text-align   : justify;
+    &:not([class]) {
+        margin: 0 0 spacing(-1);
+    }
 }
-// .site-main {
-//   p {
-//     text-align: justify;
-//   }
-// }
-// .pastas--home {
-//   p {
-//     text-align: inherit !important;
-//   }
-// }
