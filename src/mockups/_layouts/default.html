@@ -4,19 +4,15 @@
 {% include head.html %}
 
 <body class="body">
-  <div class="container-content">
-    {% include header.html %}
-  </div>
 
-
-  <div class="content container-content">
-    <main class="site-main main-fixed">
+  {% include header.html %}
+    <div class="">
       {{ content }}
-    </main>
-  </div>
-  <div class="content container-content">
+    </div>
+
+
     {% include footer.html %}
-  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
   <script src="/js/vendor.js"></script>
   <script src="/js/app.js"></script>
