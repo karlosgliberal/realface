@@ -5990,9 +5990,6 @@ a:hover {
 /*
 * Watch
 */
-#watch {
-  background-color: #ccc; }
-
 #watch h1 {
   margin: 0; }
 
@@ -6005,7 +6002,7 @@ a:hover {
 
 #watch1 > div {
   color: #fff;
-  height: 200px;
+  height: 300px;
   font-size: 55px; }
 
 .btn-group-watch {
@@ -6121,6 +6118,12 @@ body {
 
 input {
   outline: 0; }
+
+#detectedFaces img {
+  width: 100% !important; }
+
+.jugadores-img img {
+  width: 383px; }
 
 .m-0 {
   margin: 0 0 !important; }
