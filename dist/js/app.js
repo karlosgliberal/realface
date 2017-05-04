@@ -219,6 +219,7 @@ move();
     var eleccionJugador;
 
     $("#botonEntrada").click(function(){
+      console.log('hola');
       $('#intro').addClass('hidden');
       $('#jugadores').show('fast');
 
