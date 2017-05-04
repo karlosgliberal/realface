@@ -175,7 +175,7 @@ body {
 }
 
 .header-face {
-    z-index         : 99999999;
+    z-index         : 99999999999999999999;
     background-color: $black;
     @include media-breakpoint-up(lg) {
         img {
@@ -229,12 +229,19 @@ input {
 
 #detectedFaces {
     img {
-        width: 100% !important;
+        position: relative;
+        left    : -33px;
+        z-index : 1;
     }
 }
 
 .jugadores-img {
     img {
-        width: 383px;
+        width: 365px;
     }
+}
+
+.aaa {
+    position: relative;
+    top     : -3px;
 }
