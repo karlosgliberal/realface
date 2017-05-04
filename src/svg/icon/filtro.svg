@@ -1,0 +1,13 @@
+<svg width="18" height="16" viewBox="0 0 18 16">
+  <g fill="none" fill-rule="evenodd" stroke="#262626" transform="translate(1)">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.11111111,11.5555556 L3.11111111,16.8888889" transform="rotate(-90 3.111 14.222)"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12,10.6666667 L12,17.7777778" transform="rotate(-90 12 14.222)"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5.33333333,3.11111111 L5.33333333,12.8888889" transform="rotate(-90 5.333 8)"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M14.2222222,6.66666667 L14.2222222,9.33333333" transform="rotate(-90 14.222 8)"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M1.77777778,0.444444444 L1.77777778,3.11111111" transform="rotate(-90 1.778 1.778)"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M10.6666667,-3.11111111 L10.6666667,6.66666667" transform="rotate(-90 10.667 1.778)"/>
+    <circle cx="11.556" cy="8" r="1.278" transform="rotate(-90 11.556 8)"/>
+    <circle cx="4.444" cy="1.778" r="1.278" transform="rotate(-90 4.444 1.778)"/>
+    <circle cx="7.111" cy="14.222" r="1.278" transform="rotate(-90 7.111 14.222)"/>
+  </g>
+</svg>

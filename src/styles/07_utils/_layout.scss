@@ -1,0 +1,6 @@
+.u-equal-height {
+   > [class^="col-"],
+  > [class*=" col-"] {
+    @include equal-height;
+  }
+}

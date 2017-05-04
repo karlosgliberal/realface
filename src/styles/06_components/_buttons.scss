@@ -1,0 +1,153 @@
+/*doc
+---
+title: Botones básicos
+category: Componentes - Botones
+---
+
+
+### Botones
+
+```example
+<a class="btn-base btn-normal btn-red" href="/">
+Reservar
+</a>
+
+
+<a class="btn-base btn-normal btn-white" href="/">
+Reservar
+</a>
+
+
+<a class="btn-base btn-mini btn-red" href="/">
+Reservar
+</a>
+
+```
+*/
+.btn {
+  @include rollover;
+}
+
+.btn-red {
+  background-color: $red;
+  color           : white;
+
+  &:hover {
+    opacity: 0.8;
+    color  : $white;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  color           : $red;
+  border-color    : $red;
+  border          : 1px solid;
+
+  &:focus {
+    color: $red;
+  }
+}
+
+.btn-gray--wrap {
+  display: inline-block;
+}
+
+.btn-gray {
+  background-color: $white;
+  color           : #B6B6B6;
+  border-color    : #B6B6B6;
+  border          : 1px solid;
+
+  &:focus {
+    color: $red;
+  }
+}
+
+.btn-base {
+  font-family  : $font-family-daxoffc-medi;
+  font-size    : $font-size-mini;
+  border-radius: 100px;
+  display      : inline-block;
+  @include rollover;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-circle {
+  border-radius: 100px;
+  padding      : spacing(-2);
+  @include rollover;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-normal {
+  letter-spacing: 2px;
+  padding       : 15px 40px;
+  text-transform: uppercase;
+}
+
+.btn-mini {
+  padding: 7px 15px;
+  @include media-breakpoint-up(xl) {
+    padding: 7px 20px;
+  }
+}
+
+.btn-restaurante {
+  padding: 3px 11px;
+}
+
+.btn-action {
+  letter-spacing: 2px;
+  padding       : 15px 28px;
+  text-transform: uppercase;
+}
+
+.btn-share {
+  padding       : 3px 17px;
+  text-transform: uppercase;
+  font-family   : $font-family-daxoffc-medi;
+  font-size     : 13px;
+  color         : $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-medium {
+  padding: 12px 27px;
+}
+
+.btn-search {
+  border-radius      : 0;
+  font-size          : 0;
+  border-radius      : 0;
+  cursor             : pointer;
+  background-image   : url("../images/icon-lupa.svg");
+  background-position: 50% 50%;
+  background-repeat  : no-repeat;
+  padding            : 27px;
+}
+
+.static-page {
+  a.btn-white {
+    color          : $red !important;
+    text-decoration: none !important;
+  }
+
+  a.btn-red {
+    color          : white !important;
+    text-decoration: none !important;
+  }
+}

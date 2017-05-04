@@ -1,0 +1,27 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family           : $font-family-sans;
+  background-color      : #E8E8E8;
+  position              : relative;
+}
+
+a {
+  text-decoration: none;
+  color          : $black;
+
+  &:hover {
+    text-decoration: none;
+    color          : $black;
+    opacity        : 0.8;
+  }
+
+  &:focus {
+    outline        : 0;
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+    color          : $red;
+  }
+}

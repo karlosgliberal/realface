@@ -1,0 +1,171 @@
+/*!
+ * jQuery Slot Machine v3.0.1
+ * https:// github.com/josex2r/jQuery-SlotMachine
+ *
+ * Copyright 2014 Jose Luis Represa
+ * Released under the MIT license
+ */
+.slotMachineNoTransition {
+    -webkit-transition: none !important;
+    transition        : none !important;
+}
+
+.slotMachineBlurFast {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.slotMachineBlurMedium {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.slotMachineBlurSlow {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.slotMachineBlurTurtle {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.slotMachineGradient {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(25%, rgba(0,0,0,1)), color-stop(75%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)) );
+}
+@charset "utf-8";
+/* CSS Document */
+a:hover {
+    text-decoration: underline;
+    color          : #a9b119;
+}
+
+.clear {
+    clear: both;
+}
+/*
+* Watch
+*/
+#watch {
+    background-color: #ccc;
+}
+
+#watch h1 {
+    margin: 0;
+}
+
+#watch .content:nth-child(1) {
+    text-align: center;
+}
+
+#watch .content > div {
+    clear : both;
+    margin: 0 auto;
+}
+
+#watch .content > div.small {}
+
+#watch1 > div {
+    color    : #fff;
+    height   : 200px;
+    font-size: 55px;
+}
+
+.btn-group-watch {
+    margin-top: 120px;
+}
+
+.btn-group-watch .btn {
+    border          : none;
+    background-color: rgb(72, 158, 48);
+}
+
+.btn-group-watch .btn:focus,
+.btn-group-watch .btn:hover {
+    background-color: rgb(72, 158, 48);
+}
+
+.item {
+    display              : inline-block;
+    margin               : 2px 5px 10px 2px;
+    padding              : 10px 10px 10px 5px;
+    border               : solid 1px #BDBED9;
+    background-color     : #F5F5F8;
+    box-shadow           : 1px 1px 4px #888888;
+    -webkit-box-shadow   : 1px 1px 4px #888888;
+    -moz-box-shadow      : 1px 1px 4px #888888;
+    border-radius        : 5px;
+    -moz-border-radius   : 5px;
+    -webkit-border-radius: 5px;
+}
+//MEtiendo el tema de los inputo en umagenes
+
+.cc-selector input {
+    margin            : 45px;
+    padding           : 5px;
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+}
+
+.cc-selector-2 input {
+    position: absolute;
+    z-index : 999;
+}
+
+.cristiano {
+    background-image: url("../images/cristiano.jpg");
+}
+
+.marcelo {
+    background-image: url("../images/marcelo.jpg");
+}
+
+.modric {
+    background-image: url("../images/modric.jpg");
+}
+
+.pepe {
+    background-image: url("../images/pepe.jpg");
+}
+
+.ramos {
+    background-image: url("../images/ramos.jpg");
+}
+
+.zidane {
+    background-image: url("../images/zidane.jpg");
+}
+
+.cc-selector input:active +.jugador-cc,
+.cc-selector-2 input:active +.jugador-cc {
+    opacity: 0.9;
+}
+
+.cc-selector input:checked +.jugador-cc,
+.cc-selector-2 input:checked +.jugador-cc {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.jugador-cc {
+    border           : 10px solid white;
+    cursor           : pointer;
+    background-size  : contain;
+    background-repeat: no-repeat;
+    width            : 160px;
+    height           : 180px;
+    transition       : all 100ms ease-in;
+    filter: brightness(1) grayscale(.5) opacity(.7);
+}
+
+.jugador-cc:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+.jugadores--lista {
+    background-color: #bdbdbd;
+}

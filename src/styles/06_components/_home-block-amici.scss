@@ -1,0 +1,112 @@
+$font-size-number: 40px;
+
+.home--amici {
+  position: relative;
+}
+
+.home--amici_mobi {
+  width              : 264px;
+  height             : 533px;
+  background-image   : url('../images/iphone.png');
+  background-position: 50% 50%;
+  background-repeat  : no-repeat;
+  position           : absolute;
+  margin             : auto;
+  top                : 68px;
+  left               : 0;
+  right              : 0;
+  z-index            : 33;
+  overflow           : hidden;
+}
+
+.home--amici__r {
+  color: $white;
+}
+
+.u-amici__spa {
+  padding: 50px 0;
+  @include media-breakpoint-up(xl) {
+    padding: 100px 0;
+  }
+}
+
+.home--amici__list {
+  list-style: none;
+  @include media-breakpoint-down(xs) {
+    padding: 0;
+  }
+
+  li {
+    background-image   : url('../images/amici-li.png');
+    background-repeat  : no-repeat;
+    background-position: 0 10px;
+    padding-left       : 30px;
+    padding-top        : 3px;
+    padding-bottom     : 5px;
+  }
+}
+
+.home--amici__stores {
+  list-style  : none;
+  padding-left: 40px;
+  @include media-breakpoint-down(xs) {
+    padding-left: 25px;
+  }
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  li {
+    padding-top : 10px;
+    padding-left: 10px;
+
+    &:first-child {
+      @include media-breakpoint-down(xs) {
+        padding-left: 0;
+      }
+    }
+
+    &:last-child {
+      @include media-breakpoint-down(xs) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  img {
+    @include media-breakpoint-up(md) {
+      width: 90%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+  }
+}
+
+.home--amici__con {
+  position: relative;
+  top     : 51px;
+  left    : 17px;
+  overflow: hidden;
+  width   : 231px;
+  height  : 408px;
+}
+
+.home--amici__r {
+  padding-left: 100px;
+  @include media-breakpoint-between(xs, md) {
+    padding-left: 0;
+  }
+}
+
+.promo--home {
+  padding: 100px 165px 0 80px;
+  @include media-breakpoint-between (xs, lg) {
+    padding: 20px 10px;
+  }
+}
+
+.promo--home__texto {
+  color    : $graydark;
+  font-size: $font-size-md;
+}

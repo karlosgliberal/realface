@@ -1,0 +1,18 @@
+.redes--social {}
+
+.redes--social__parrafo {
+  font-family: $font-family-sans;
+  font-size  : $font-size-lg;
+}
+
+.redes--social--list {
+  list-style    : none;
+  display       : flex;
+  flex-direction: row;
+  padding       : 0;
+  margin        : 0;
+}
+
+.redes--social--wrap {
+  width: 151px;
+}

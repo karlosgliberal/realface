@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="7" cy="7" r="4"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8" height="8" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Platos---nodo---alerfgenos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plato-final---ensalada-alergenos-(mitad)" transform="translate(-918.000000, -572.000000)">
+            <g id="Group-3" transform="translate(925.000000, 579.000000) rotate(-90.000000) translate(-925.000000, -579.000000) translate(918.000000, 572.000000)">
+                <g id="Icon" transform="translate(7.000000, 7.000000) rotate(-90.000000) translate(-7.000000, -7.000000) translate(0.000000, -0.000000)">
+                    <ellipse id="Line-29-Copy" fill="#8C1713" cx="7" cy="7" rx="7" ry="7"></ellipse>
+                    <use id="Line-28" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2.52" stroke-linecap="square" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

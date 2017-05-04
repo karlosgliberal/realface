@@ -1,0 +1,15 @@
+.hamburger {
+  padding : 0;
+  position: absolute;
+  top     : 14px;
+  right   : -1px;
+  @include media-breakpoint-up(md) {
+    top  : 17px;
+    right: -20px;
+  }
+
+  &:focus {
+    outline        : 0;
+    text-decoration: none;
+  }
+}

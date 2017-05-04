@@ -1,0 +1,49 @@
+.section--blog {
+  @include media-breakpoint-up(lg) {
+    background-image   : url('../images/bg-blog.png');
+    background-position: 79% 13%;
+  }
+  @include media-breakpoint-down(lg) {
+    background-position: 96% 13%;
+  }
+  background-repeat  : no-repeat;
+  padding            : 80px 0;
+  background-position: 79% 13%;
+}
+
+.section--video {
+  @include media-breakpoint-up(lg) {
+    background-image   : url('../images/bg-videos.png');
+    background-position: 76% 17%;
+  }
+  @include media-breakpoint-down(lg) {
+    background-position: 90% 17%;
+  }
+  background-repeat  : no-repeat;
+  padding            : 80px 0;
+  background-position: 76% 20%;
+}
+
+.block--player {
+  background-color: $red;
+  border-radius   : 100%;
+  width           : 60px;
+  height          : 60px;
+  transition      : all 400ms ease-out;
+  opacity         : 0.8;
+  position        : absolute;
+  top             : 39%;
+  right           : 41%;
+  cursor          : pointer;
+  z-index         : 999;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .icon {
+    position: relative;
+    top     : 19px;
+    left    : 22px;
+  }
+}

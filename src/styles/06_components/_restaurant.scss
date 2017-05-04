@@ -1,0 +1,212 @@
+.restaurante-telefono {
+  font-size  : 19px;
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-xl;
+  }
+  font-family: $font-family-daxoffc-medi;
+  position   : relative;
+  top        : -5px;
+  left       : 5px;
+
+  a {
+    text-decoration: none;
+    color          : $red;
+  }
+}
+
+.restaurante-picture {
+  max-width: 100%;
+  height   : 254px;
+  @include media-breakpoint-up(sm) {
+    height: 472px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 472px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 340px;
+  }
+  @include media-breakpoint-up(xl) {
+    height: 520px;
+  }
+}
+
+.restaurante-picture__slide {
+  border-radius: 100%;
+  max-width    : 10px !important;
+  height       : 10px !important;
+  margin-right : 4px !important;
+  margin-left  : 4px !important;
+}
+
+.restaurante-payments__title {
+  text-transform: uppercase;
+  padding       : 0 0 10px 5px;
+  font-size     : 13px;
+  color         : #9B9B9B;
+}
+
+.servicios-restaurantes {
+  padding: 0;
+}
+
+.servicios-restaurantes__item {
+  list-style: none;
+  // temporal hasta preset de drupal
+  img {
+    width: 38px;
+  }
+}
+
+.horario-restaurante__title {
+  padding-left: 17px;
+}
+
+.horario-restaurante__day {
+  width     : 3%;
+  text-align: justify;
+}
+
+.ficha-restaurante__title {
+  font-family: $font-family-bembo-semi;
+  font-size  : 24px;
+  color      : $black;
+  line-height: 1.2;
+}
+
+.ficha-restaurante {
+  @include media-breakpoint-down(xs) {
+    // height: auto;
+    min-height: 450px;
+  }
+  height: 100%;
+  width : 100%;
+}
+
+.ficha-restaurante__dist {
+  font-family: $font-family-bembo;
+  font-size  : 13px;
+}
+
+.ficha-restaurante__text {
+  color: $graydark;
+
+  p {
+    margin: 0;
+    @include media-breakpoint-down(xs) {
+      // margin-bottom:: 10px;
+    }
+  }
+}
+
+.ficha-restaurante__tlf {
+  color      : $red;
+  font-family: $font-family-daxoffc-medi;
+}
+
+.ficha-restaurante--large {
+  min-height: 460px;
+}
+
+.ficha-restaurante-large__picture {
+  width              : 100%;
+  background-position: 50% 50%;
+  background-size    : cover;
+  @include media-breakpoint-up(md) {
+    height: 100%;
+    width : 330px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 265px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100%;
+    width : 100%;
+  }
+  @include media-breakpoint-only(md) {
+    height: 265px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.ficha-restaurante__actions {
+  position: absolute;
+  bottom  : -1px;
+  @include media-breakpoint-down(xs) {
+    bottom: 10px;
+  }
+}
+
+.ficha-restaurante__actionsbig {
+  bottom: 20px;
+  @include media-breakpoint-down(sm) {
+    bottom: -5px;
+  }
+}
+
+.ficha-restaurante__title--big {
+  font-size  : 36px;
+  font-family: $font-family-bembo-semi;
+  color      : $black;
+  line-height: 1.2;
+  @include media-breakpoint-down(sm) {
+    line-height: 1;
+  }
+}
+
+.ficha-restaurante--position {
+  padding-top: 0;
+  @include media-breakpoint-up(xl) {
+    padding-top: 90px;
+  }
+}
+
+.restaurante-cercanos {
+  padding-top   : 40px;
+  padding-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 85px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top   : 40px;
+    padding-bottom: 115px;
+  }
+}
+
+.buscador-ubicacion {
+  position: relative;
+  top     : -7px;
+}
+
+.geolocation-common-map-locations {
+  display: none;
+}
+
+.actions-sup {
+  display      : flex;
+  flex-wrap    : wrap;
+  list-style   : none;
+  margin-bottom: 0;
+  padding      : 0;
+}
+
+.actions-sup__title {
+  font-size  : 18px;
+  font-family: $font-family-daxoffc-medi;
+}
+
+.restaurante--phone {
+  position : absolute;
+  right    : 15px;
+  top      : 50%;
+  transform: translateY(-50%);
+}
+
+.restaurante--sup__actions {
+  top      : 50%;
+  transform: translateY(-50%);
+  position : relative;
+}

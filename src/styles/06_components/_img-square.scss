@@ -1,0 +1,48 @@
+/*doc
+---
+title: Img square
+name: img-square
+category: Componentes - Img squre
+---
+
+El componente img square genera un border interior en las imagenes
+
+```html_example
+
+<div class="picture-container">
+  <div class="picture">
+    <img class="img-fluid" src="http://placehold.it/460x370" alt="test">
+  </div>
+</div>
+
+```
+
+*/
+.picture-container {
+  overflow: hidden;
+  position: relative;
+  @include media-breakpoint-down(xs) {
+    margin: 15px 0;
+  }
+}
+
+.picture:after {
+  position: absolute;
+  top     : 30px;
+  left    : 30px;
+  right   : 30px;
+  bottom  : 30px;
+  border  : 1px solid $grayverylight;
+  content : '';
+  display : block;
+}
+
+.picture-bg {
+  width              : 100%;
+  height             : 290px;
+  background-position: center;
+  background-size    : cover;
+  @include media-breakpoint-up(sm) {
+    height: 100%;
+  }
+}

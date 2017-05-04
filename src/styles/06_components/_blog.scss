@@ -1,0 +1,65 @@
+.date--circle {
+  @include radius-border(100%);
+  background-color: $ocher;
+  padding         : 23px 0;
+  width           : 73px;
+  height          : 73px;
+  color           : $white;
+  font-family     : $font-family-bembo;
+  text-align      : center;
+  line-height     : 0.8;
+  position        : absolute;
+  right           : 22px;
+  bottom          : -36px;
+}
+
+.date--circle__dia {
+  font-size  : $font-size-xl;
+  font-weight: bold;
+}
+
+.date--circle__mes {
+  text-transform: uppercase;
+  font-weight   : bold;
+}
+
+.post--title {
+  font-family   : $font-family-sans-bold;
+  text-transform: uppercase;
+  color         : $red;
+  @include typi($section-title-big);
+}
+
+.post--dates__autor {
+  color: $ocher;
+
+  a {
+    color: $ocher;
+  }
+}
+
+.post--place {
+  font-size  : 22px;
+  font-weight: bold;
+  color      : $red;
+}
+
+.blog--list__title {
+  text-transform: uppercase;
+  font-weight   : bold;
+  font-family   : $font-family-sans-bold;
+  font-size     : $font-size-xl;
+}
+
+.blog--list__list {
+  list-style-type: none;
+  padding-left   : spacing(-2);
+
+  a {
+    @include rollover;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

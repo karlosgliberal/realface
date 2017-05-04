@@ -1,0 +1,60 @@
+.temp-header {
+  background-color: #98120d;
+}
+
+.temp-footer {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#98120d+0,8f0222+44,8c1815+100 */
+  background: #98120d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #98120d 0%, #8f0222 44%, #8c1815 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #98120d 0%,#8f0222 44%,#8c1815 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #98120d 0%,#8f0222 44%,#8c1815 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#98120d', endColorstr='#8c1815',GradientType=1 );
+  /* IE6-9 */
+}
+
+.temp-footer-inf {
+  background-color: #2a2727;
+}
+
+#block-tagliatella-local-actions,
+#block-tagliatella-primary-local-tasks {
+  background-color: #ccc;
+  display         : inline-block;
+  width           : 100%;
+  padding-top     : 10px;
+  clear           : both;
+}
+
+#block-tagliatella-local-actions ul,
+#block-tagliatella-primary-local-tasks ul {
+  flex-direction: row;
+  display       : flex;
+  list-style    : none;
+}
+
+#block-tagliatella-local-actions ul li,
+#block-tagliatella-primary-local-tasks ul li {
+  display   : list-item;
+  text-align: -webkit-match-parent;
+}
+
+#block-tagliatella-local-actions ul li a,
+#block-tagliatella-primary-local-tasks ul li a {
+  padding: 0.5rem;
+}
+
+#block-tagliatella-local-actions {}
+
+.statusinfo {
+  width: 100%;
+  clear: both;
+  color: #eee;
+}
+
+input.form-autocomplete {
+  background-position: 100% 499% !important;
+}

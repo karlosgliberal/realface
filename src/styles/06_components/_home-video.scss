@@ -1,0 +1,122 @@
+.c-home-video {
+  max-width: 1700px;
+  // height   : 80vh;
+}
+
+.home-video__video {
+  max-width: 1700px;
+  height   : 80vh;
+}
+
+.c-home-video__picture {
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  width              : 100%;
+  height             : 100%;
+}
+
+.c-home-video__logo {
+  line-height: 90vh;
+  text-align : center;
+}
+
+.action-down--home__animated {
+  animation-duration       : 1.3s;
+  animation-fill-mode      : both;
+  animation-iteration-count: infinite;
+}
+
+.action-down--home {
+  width           : 90px;
+  height          : 90px;
+  border          : 2px solid #FFFFFF;
+  background-color: $red;
+  border-radius   : 100%;
+  margin          : 0 auto;
+  position        : relative;
+  top             : -48px;
+  cursor          : pointer;
+  position        : relative;
+  @include rollover;
+
+  &:hover {
+    background-color: $redlight;
+  }
+}
+
+.action-down--home__line {
+  background-image   : url("../images/line.png");
+  width              : 10px;
+  height             : 60px;
+  background-position: center;
+  background-repeat  : no-repeat;
+  position           : absolute;
+  top                : 63px;
+  left               : 39px;
+}
+
+.action-down--home__texto {
+  position: relative;
+  top     : 32px;
+  left    : 31px;
+}
+
+.tv {
+  position           : relative;
+  top                : 0;
+  z-index            : 0;
+  width              : 100%;
+  height             : 100%;
+  overflow           : hidden;
+  background-position: 50% 50%;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  background-color   : $black;
+}
+
+.screen {
+  position  : absolute;
+  top       : 0;
+  right     : 0;
+  bottom    : 0;
+  left      : 0;
+  z-index   : 1;
+  margin    : auto;
+  opacity   : 0;
+  transition: opacity 0.5s;
+}
+
+.logo-v {
+  position: absolute;
+  top     : 0;
+  width   : 100%;
+  height  : 80vh;
+  z-index : 4;
+}
+
+.tv .screen.active {
+  opacity: 1;
+}
+
+.icon--logohome {
+  width              : 500px;
+  height             : 100%;
+  margin             : 0 auto;
+  background-image   : url('../images/logo-home.png');
+  @include media-breakpoint-down(xs) {
+    background-size: 270px;
+    width          : 100%;
+  }
+  background-position: 50% 50%;
+  background-repeat  : no-repeat;
+}
+
+.block--player__grid {
+  top : 35%;
+  left: 38%;
+}
+
+.block--player__dest {
+  top: 40%;
+}

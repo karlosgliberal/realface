@@ -1,0 +1,78 @@
+.no-p-lr {
+  padding-left: 0;
+  padding-right:: 0;
+}
+
+.no-p {
+  padding-left : 0 !important;
+  padding-right: 0 !important;
+
+   > [class*=" col-"],
+  > [class^="col-"] {
+    padding-left : 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.no-p-up-xs {
+  padding-left : 0 !important;
+  padding-right: 0 !important;
+  @include media-breakpoint-down(xs) {
+    padding-left : 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.no-p-up-md {
+  padding-left : 0 !important;
+  padding-right: 0 !important;
+  @include media-breakpoint-down(lg) {
+    padding-left : 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.no-pl-up-xs {
+  padding-left: 0 !important;
+  @include media-breakpoint-down(xs) {
+    padding-left: 15px !important;
+  }
+}
+
+.no-pr-up-xs {
+  padding-right: 0 !important;
+  @include media-breakpoint-down(xs) {
+    padding-right: 15px !important;
+  }
+}
+
+.no-p-l {
+  padding-left: 0 !important;
+}
+
+.no-p-r {
+  padding-right: 0 !important;
+}
+
+.no-p-d {
+  padding-left : 0;
+  padding-right: 0;
+  @include media-breakpoint-down(md) {
+    padding-left : 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.no-p-l-d {
+  padding-left: 0 !important;
+  @include media-breakpoint-down(md) {
+    padding-left: 10px !important;
+  }
+}
+
+.no-p-r-d {
+  padding-left: 0 !important;
+  @include media-breakpoint-down(md) {
+    padding-left: 10px !important;
+  }
+}

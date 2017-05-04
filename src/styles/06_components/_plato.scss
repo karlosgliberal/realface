@@ -1,0 +1,212 @@
+.p-extra {
+  padding: 0;
+  @include media-breakpoint-up(sm) {
+    padding-left: 20px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-left: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-left: 80px;
+  }
+}
+
+.plato-list {
+  a {
+    text-decoration: none;
+    color          : $black;
+    font-family    : $font-family-daxoffc-medi;
+    font-size      : $font-size-lg;
+
+    p:hover {
+      color: $red;
+      @include transition;
+    }
+  }
+}
+
+.plato-carrousel {
+  line-height: 1.2;
+
+  a {
+    text-decoration: none;
+    color          : $graydark;
+    font-size      : $font-size-mini;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+ul.items-aler {
+  list-style-image: url("../images/li.svg");
+  @include media-breakpoint-down(sm) {
+    list-style: none;
+    padding   : 0;
+  }
+}
+
+.u-bg-center {
+  background-position: 50% 50%;
+  background-position: center;
+  background-repeat  : none;
+  background-size    : cover;
+}
+
+.plato-picture {
+  @include aspect-ratio(16, 9);
+}
+
+.plato-picture_exp {
+  @include aspect-ratio(875,492);
+  width: 100%;
+}
+
+.plato-picture__uno {
+  min-height: 250px;
+  width     : 100%;
+  @include media-breakpoint-up (lg) {
+    min-height: 478px;
+  }
+  @include media-breakpoint-down (sm) {
+    min-height: 300px;
+  }
+}
+
+.fade-down--platos__animated {
+  animation-duration       : 1.3s;
+  animation-fill-mode      : both;
+  animation-iteration-count: 1;
+}
+
+.platos--relacionados__container {
+  padding: 0 47px;
+}
+
+.posicion {
+  position: relative;
+}
+
+.platos--wrapper {
+  z-index: 999999999999;
+}
+
+.platos--relacionados {
+  width              : 47px;
+  height             : 100%;
+  cursor             : pointer;
+  background-image   : url('../images/direction.png');
+  background-position: center;
+  background-repeat  : no-repeat;
+}
+
+.platos--relacionados__right {
+  position   : absolute;
+  top        : 0;
+  right      : 0;
+  border-left: 1px solid $gray;
+  border-right:: 1px solid $gray;
+}
+
+.platos--relacionados__left {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  border-left:: 1px solid $gray;
+  transform: rotate(180deg);
+}
+
+.plato--carrousel-item {
+  padding: 0;
+}
+
+.js-plato--carrousel-initem {
+  padding: 10px 0 0;
+}
+// Container de todo
+
+.menu-platos {
+  border-bottom: 1px solid $graylight;
+  height       : 87px;
+  transition   : all 0.7s;
+  overflow     : hidden;
+
+  .owl-item {
+    border-right: 1px solid $graylight;
+  }
+}
+
+.js-menu-platos-in {
+  height: 121px;
+}
+// Imagen de plato
+
+.plato--carrousel-img {
+  transition: all 0.7s;
+  opacity   : 0;
+}
+
+.js-plato--carrousel-img-in {
+  opacity   : 1;
+  transition: all 0.7s;
+}
+// Container de Plato
+
+.plato-carrousel {
+  position  : relative;
+  top       : -31px;
+  transition: all 0.7s;
+
+  a:hover {
+    color: $red;
+  }
+}
+
+.js-plato-carrousel-in {
+  height     : 120px;
+  padding-top: 10px;
+  top        : 0;
+  transition : all 0.7s;
+}
+
+.plato-carrousel:hover {
+  transition: all 0.3s;
+}
+// Botones de Accion
+
+.relacionados--actions {
+  margin    : 13px 0;
+
+  ul {
+    width : 325px;
+    margin: 0 auto;
+  }
+  transition: all 0.7s;
+}
+
+.js-relacionados--actions-in {
+  margin    : 30px 0;
+  transition: all 0.7s;
+}
+
+.familias--relacionados {
+  z-index: 999;
+}
+
+.seccion-plato {
+  @include media-breakpoint-up(xl) {
+    padding-top: 87px;
+  }
+}
+
+.plato--pragraphs {
+  padding: 10px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 30px 0;
+  }
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}

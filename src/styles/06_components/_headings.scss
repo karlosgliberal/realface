@@ -1,0 +1,61 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-weight  : normal;
+
+  &:not([class]) {
+    margin-bottom: 10px;
+  }
+}
+// Titulos principales
+// Titulos de seccion
+
+.title-section-up {
+  @include typi($section-sub-title);
+}
+
+.title-section {
+  @include typi($section-title);
+  @include media-breakpoint-down(xs) {
+    padding-top: 5px;
+  }
+}
+
+.title-section-big {
+  font-family   : $font-family-sans-bold;
+  color         : $red;
+  text-transform: uppercase;
+  text-align    : center;
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+  @include typi($section-title-big);
+}
+
+.title-section-big__plato {
+  font-family   : $font-family-sans-bold;
+  color         : $red;
+  text-transform: uppercase;
+  text-align    : center;
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+  }
+  @include typi($section-title-big-plato);
+}
+
+.title-section-big_cat {
+  font-family   : $font-family-sans-bold;
+  color         : $white;
+  text-transform: uppercase;
+  text-align    : center;
+  text-shadow   : 0 2px 4px rgba(67,63,63,0.50);
+  @include typi($section-title-big);
+}
+
+.title-section__restaurant {
+  @include typi($section-sub-title-restaurant);
+}

@@ -1,0 +1,58 @@
+.u-left-block {
+  @include float-left;
+}
+
+.u-rigth-block {
+  @include float-right;
+}
+
+.u-center-block {
+  text-align: center;
+}
+
+.u-sm-center {
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+
+.u-sm-d-center {
+  @include media-breakpoint-down(xs) {
+    text-align   : center;
+    padding-left : spacing(-1);
+    padding-right: spacing(-1);
+  }
+}
+
+.u-text-hidden {
+  @include invisible;
+}
+
+.u-sr-only {
+  @include sr-only();
+}
+
+.u-row-max {
+  @include media-breakpoint-up(md) {
+    height: 100%;
+    width : 100%;
+  }
+}
+
+.u-md-center {
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+
+.u-sm-center {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+
+.u-xs-center {
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+}

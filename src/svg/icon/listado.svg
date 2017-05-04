@@ -1,0 +1,8 @@
+<svg width="20" height="20" viewBox="0 0 20 20">
+  <g fill-rule="evenodd" transform="rotate(-90 10 8)">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M13.8888889 6L13.8888889 15.7777778M7.88888889 6L7.88888889 15.7777778M1.88888889 6L1.88888889 15.7777778"/>
+    <circle cx="7.778" cy="1.778" r="1.278" />
+    <circle cx="1.778" cy="1.778" r="1.278" />
+    <circle cx="13.778" cy="1.778" r="1.278" />
+  </g>
+</svg>

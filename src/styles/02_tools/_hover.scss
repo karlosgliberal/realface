@@ -1,0 +1,25 @@
+/*doc
+---
+title: Rollover
+category: Mixins
+---
+
+*/
+@mixin rollover {
+  transition: all 400ms ease-out;
+
+  &:active {
+    transition: all 200ms ease-out;
+  }
+}
+
+.u-redhover {
+  &:hover {
+    @include rollover;
+    color: $red !important;
+
+    svg {
+      stroke: $red;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real Face</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body class="body">
+  <div class="container-content">
+    <header class="sticky-menu header-tagliatella" data-sticky-menu>
+
+</header>
+
+
+
+<!-- Menú lateral mobile -->
+
+<div class="nav--mobile hidden-lg-up">
+
+  <div class="nav--mobile__close">
+    <a class="nav--mobile__btn">
+      <svg class="icon icon-normal">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../icons/sprite/sprite.svg#icon--mclose"></use>
+      </svg>
+    </a>
+
+  </div>
+  <nav class="nav--mobile__nav">
+    <ul class="nav--mobile__itemlist">
+      <li class="nav--mobile__item u-b-b"><a href="#">Buscador y reservas</a></li>
+
+      <li class="nav--mobile__item u-b-b">
+        <a class="dropdown-toggle" data-toggle="collapse" href="#carta-mb">Carta</a>
+        <div class="collapse" id="carta-mb">
+          <ul class="nav--mobile__itemdrop">
+            <li class="py-1"><a href="#">Antipasti</a></li>
+            <li class="py-1"><a href="#">Inslate</a></li>
+            <li class="py-1"><a href="#">Burritos</a></li>
+            <li class="py-1"><a href="#">Navajas</a></li>
+            <li class="py-1"><a href="#">Platos</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav--mobile__item u-b-b"><a href="#">Pedidos</a></li>
+      <li class="nav--mobile__item u-b-b"><a href="#">Amici</a></li>
+
+
+      <li class="nav--mobile__item u-b-b">
+        <a class="dropdown-toggle" data-toggle="collapse" href="#desde-italia-mb">Desde Italia</a>
+        <div class="collapse" id="desde-italia-mb">
+          <ul class="nav--mobile__itemdrop">
+            <li class="py-1"><a href="#">Blog</a></li>
+            <li class="py-1"><a href="#">Vídeos</a></li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="nav--mobile--languages pt-4">
+      <p class="">Seleccionar idioma</p>
+      <ul class="nav--mobile--languages__itemlist">
+        <li class="nav--mobile--languages__item px-2"><a href="#">ES</a></li>
+        <li class="nav--mobile--languages__item px-2"><a href="#">EN</a></li>
+        <li class="nav--mobile--languages__item px-2"><a href="#">FR</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+<!-- Fin de Menú lateral mobile -->
+
+  </div>
+
+
+  <div class="content container-content">
+    <main class="site-main main-fixed">
+      <section class="pregunta">
+  <div class="container">
+    <h2 class="title-section-big pb-5"> ¿A quien te pareces del Real Madrid?</h2>
+    <div class="row">
+      <div class="col-12">
+        <p>Apuesta, quien creres que se parece más de la plantilla del real madrid a ti. Hemos entrenado una inteligancia artificial  con las caras de los jugadores del Real madrid y la compararemo </p>
+        <h3 class="center title-section-big pt-3 pb-5">¿te pareces a alguien?</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="jugadores--lista">
+  <div class="container">
+    <h3 class="title-section-big pt-3 pb-3"> Seleciona un jugador</h3>
+    <div class="row">
+      <div class="col-6">
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="cristiano" type="radio" name="jugadores" value="cristiano" />
+              <label class="jugador-cc cristiano" for="cristiano"></label>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="marcelo" type="radio" name="jugadores" value="marcelo" />
+              <label class="jugador-cc marcelo" for="marcelo"></label>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="modric" type="radio" name="jugadores" value="modric" />
+              <label class="jugador-cc modric" for="modric"></label>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="pepe" type="radio" name="jugadores" value="pepe" />
+              <label class="jugador-cc pepe" for="pepe"></label>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="ramos" type="radio" name="jugadores" value="ramos" />
+              <label class="jugador-cc ramos" for="ramos"></label>
+            </div>
+          </div>
+      </div>
+      <div class="col-6">
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="zidane" type="radio" name="jugadores" value="zidane" />
+              <label class="jugador-cc zidane" for="zidane"></label>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="video" class="video mt-5 ">
+  <video id="videoel" class="js-hidden" width="400" height="300" preload="auto" loop></video>
+  <div id="detectedFaces"></div>
+</section>
+<!-- Watch example -->
+<!-- <div class="container">
+  <h2 class="title-section-big py-3 ">Real Face</h2>
+  <div class="row py-5">
+    <div class="col-md-6">
+      <div id="watch" style="padding-top:50px;">
+        <div class="content">
+
+          <div class="small">
+            <div id="watch1">
+              <img src="http://fakeimg.pl/250x200/ffffff,128/000,255?text=Pepe">
+              <img src="http://fakeimg.pl/250x200/ffffff,128/000,255?text=Ramos">
+              <img src="http://fakeimg.pl/250x200/ffffff,128/000,255?text=Bale">
+              <img src="http://fakeimg.pl/250x200/ffffff,128/000,255?text=Marcelo">
+              <img src="http://fakeimg.pl/250x200/ffffff,128/000,255?text=Guti">
+            </div>
+          </div>
+
+          <div>
+            <div class="btn-group btn-group-justified btn-group-watch" role="group">
+              <div id="slotMachineButtonPrev" type="button" class="btn btn-primary btn-lg">Prev</div>
+              <div id="slotMachineButtonNext" type="button" class="btn btn-primary btn-lg">Next</div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <section class="jugadores--lista">
+  <div class="container">
+    <h2 class="title-section-big py-3 ">Real Face</h2>
+    <div class="row">
+      <div class="col-6">
+        <form>
+          <div class="cc-selector-2">
+            <div class="item radio radio-info">
+              <input id="cristiano" type="radio" name="jugadores" value="cristiano" />
+              <label class="jugador-cc cristiano" for="visa2"></label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="item checkbox-circle">
+              <input id="marcelo" type="radio" name="jugadores" value="marcelo" />
+              <label class="jugador-cc marcelo" for="mastercard2"></label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+    </main>
+  </div>
+  <div class="content container-content">
+    <footer>
+
+
+</footer>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+  <script src="/js/vendor.js"></script>
+  <script src="/js/app.js"></script>
+  <script type="text/javascript">
+
+var vid = document.getElementById('videoel'),
+vidReady = false;
+var defaultTok = 1, defaultNumNulls = 20;
+var tok = defaultTok, people = [],  defaultPerson = -1, images = [], training = false;
+
+var numNulls, sentTimes, receivedTimes;
+var socket, socketName;
+
+
+if (navigator.getUserMedia) {
+  var videoSelector = {video : true};
+  navigator.getUserMedia(videoSelector, umSuccess, function() {
+    alert("Error fetching video from webcam");
+  });
+} else {
+  alert("No webcam detected.");
+}
+
+// createSocket("ws://facerec.cmusatyalab.org:9000", "CMU");
+createSocket("ws://realface.biko2.info", "Local");
+</script>
+</body>
+
+</html>

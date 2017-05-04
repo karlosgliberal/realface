@@ -1,0 +1,104 @@
+.main-fixed {
+  padding-top: 62px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 93px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 47px;
+  }
+}
+
+.main-fixed-home {
+  padding-top: 0;
+}
+
+.navbar--tagliatella {
+  z-index: 2222222;
+
+  a {
+    color: $white !important;
+  }
+}
+
+.header-tagliatella {
+  background-color: $redlight;
+  @include rollover;
+}
+
+.header-tagliatella-home {
+  @include rollover;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 0%, #000000 100%);
+
+  &:hover {
+    background-color: $redlight;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 100%, #000000 100%);
+  }
+}
+
+.menu-item {
+  font-family  : $font-family-daxoffc-medi;
+  font-size    : $font-size-lg;
+  padding-right: 25px !important;
+
+  a {
+    color: $white !important;
+  }
+}
+
+.menu-item--lang {
+  font-family   : $font-family-daxoffc-medi;
+  font-size     : $font-size-lg;
+  padding-bottom: 10px;
+}
+
+.navbar--languages {
+  position    : relative;
+  display     : inline-block;
+  float       : right;
+  z-index     : 9999999;
+  cursor      : pointer;
+  margin-right: 5px;
+  margin-top  : 17px;
+  @include media-breakpoint-up(xl) {
+    margin-right: 20px;
+    margin-top  : 32px;
+  }
+}
+
+.navbar--languages__list {
+  list-style-type: none;
+  padding-left   : 0;
+
+  a {
+    color: $white;
+  }
+}
+
+.item--italia__list {
+  float        : right;
+  padding-right: 43px;
+}
+
+.item--italia {
+  list-style-type: none;
+}
+
+.carta-menu--list {
+  height : 150px;
+  padding: 20px;
+  z-index: 88888888;
+}
+
+.collapse-position {
+  margin-top: 93px;
+}
+
+.carta-colapsed {
+  background-color: white;
+  max-width       : 1700px;
+  z-index         : 9999999999999;
+}
+
+.sticky-menu {
+  z-index: 99;
+}

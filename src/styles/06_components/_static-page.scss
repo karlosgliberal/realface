@@ -1,0 +1,17 @@
+.static-page {
+  a {
+    color          : $red;
+    text-decoration: underline;
+  }
+
+  h2 {
+    font-family   : $font-family-sans-bold;
+    text-transform: uppercase;
+    @include typi($section-title-big);
+  }
+
+  h3 {
+    @include typi($section-title);
+    margin: spacing(4) 0;
+  }
+}

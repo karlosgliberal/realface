@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html ng-strict-di ng-app="styleguide">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Elementos de diseño - HTML Básico</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../css/style.css">
+      
+    
+</head>
+
+  <body class="cortana-body">
+
+    <div id="waiting"></div>
+
+
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-overlay sb-width-custom" data-sb-width="200">
+
+      
+
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        <ul>
+          <li><a href="" class="js-toggle-code">Mostrar/ocultar código</a></li>
+        </ul>
+
+        
+          <h3>Global</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a href="global.html">Global</a></li>
+              
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Elementos de diseño</h3>
+          <ul>
+          
+            
+          
+            
+              
+              
+                <li><a class="active" href="elementos_de_diseño_-_html_básico.html">HTML Básico</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <div id="sb-site-all">
+
+      <header class="cortana-header sb-slide">
+        
+          <h1>Elementos de diseño - HTML Básico</h1>
+        
+        <div id="open-left" class="cortana-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <div id="sb-site">
+
+        <div class="cortana-container">
+          <div class="cortana-content-wrapper clearfix">
+            <div class="cortana-content">
+<h1 id="HTML_Básico" class="styleguide">HTML Básico</h1>
+
+<h2>Headings</h2>
+</div><div class="codeExample"><div class="exampleOutput"><h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>Heading Level 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Heading Level 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Heading Level 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Heading Level 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Heading Level 5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Heading Level 6<span class="nt">&lt;/h6&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Paragraph</h2>
+</div><div class="codeExample"><div class="exampleOutput"><p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p&gt;</span>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.<span class="nt">&lt;/p&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Inline elements</h2>
+</div><div class="codeExample"><div class="exampleOutput"><p><a href="#">This is a text link</a></p>
+
+<p><strong>Strong is used to indicate strong importance</strong></p>
+
+<p>The <em>em element</em> is text that is set off from the normal text</p>
+
+<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+
+<p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+
+<p><small>This small text is small for for fine print, etc.</small></p>
+
+<p><s>This text has a strikethrough</s></p>
+
+<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+
+<p><cite>This is a citation</cite>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>This is a text link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;&lt;strong&gt;</span>Strong is used to indicate strong importance<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;em&gt;</span>em element<span class="nt">&lt;/em&gt;</span> is text that is set off from the normal text<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;u&gt;</span>u element<span class="nt">&lt;/u&gt;</span> is text with an unarticulated, though explicitly rendered, non-textual annotation<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;&lt;del&gt;</span>This text is deleted<span class="nt">&lt;/del&gt;</span> and <span class="nt">&lt;ins&gt;</span>This text is inserted<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;&lt;small&gt;</span>This small text is small for for fine print, etc.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;&lt;s&gt;</span>This text has a strikethrough<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;&lt;q</span> <span class="na">cite=</span><span class="s">"https://developer.mozilla.org/en-US/docs/HTML/Element/q"</span><span class="nt">&gt;</span>This text is a short inline quotation<span class="nt">&lt;/q&gt;&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;&lt;cite&gt;</span>This is a citation<span class="nt">&lt;/cite&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Blockquote</h2>
+</div><div class="codeExample"><div class="exampleOutput"><blockquote> <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p> </blockquote>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;blockquote&gt;</span> <span class="nt">&lt;p&gt;</span>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.<span class="nt">&lt;/p&gt;</span> <span class="nt">&lt;/blockquote&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>HR</h2>
+</div><div class="codeExample"><div class="exampleOutput"><hr />
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Unordered list</h2>
+</div><div class="codeExample"><div class="exampleOutput"><ul>
+  <li>This is a list item in an unordered list</li>
+  <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+  <li>
+    Lists can be nested inside of each other
+    <ul>
+      <li>This is a nested list item</li>
+      <li>This is another nested list item in an unordered list</li>
+    </ul>
+  </li>
+  <li>This is the last list item</li>
+</ul>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This is a list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    Lists can be nested inside of each other
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>This is another nested list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Ordered list</h2>
+</div><div class="codeExample"><div class="exampleOutput"><ol>
+  <li>This is a list item in an ordered list</li>
+  <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+  <li>
+    Lists can be nested inside of each other
+    <ol>
+      <li>This is a nested list item</li>
+      <li>This is another nested list item in an ordered list</li>
+    </ol>
+  </li>
+  <li>This is the last list item</li>
+</ol>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This is a list item in an ordered list<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    Lists can be nested inside of each other
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>This is another nested list item in an ordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Definition list</h2>
+</div><div class="codeExample"><div class="exampleOutput"><dl>
+  <dt>Definition List</dt>
+  <dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
+  <dt>This is a term.</dt>
+  <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+  <dt>Here is another term.</dt>
+  <dd>And it gets a definition too, which is this line.</dd>
+  <dt>Here is term that shares a definition with the term below.</dt>
+  <dd>And it gets a definition too, which is this line.</dd>
+</dl>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Definition List<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>A number of connected items or names written or printed consecutively, typically one below the other.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>This is a term.<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>This is the definition of that term, which both live in a <span class="nt">&lt;code&gt;</span>dl<span class="nt">&lt;/code&gt;</span>.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Here is another term.<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>And it gets a definition too, which is this line.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Here is term that shares a definition with the term below.<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>And it gets a definition too, which is this line.<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h2>Table</h2>
+</div><div class="codeExample"><div class="exampleOutput"><table>
+  <thead>
+    <tr>
+      <th>Table Heading 1</th>
+      <th>Table Heading 2</th>
+      <th>Table Heading 3</th>
+      <th>Table Heading 4</th>
+      <th>Table Heading 5</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Table Footer 1</th>
+      <th>Table Footer 2</th>
+      <th>Table Footer 3</th>
+      <th>Table Footer 4</th>
+      <th>Table Footer 5</th>
+    </tr>
+  </tfoot>
+  <tbody>
+  <tr>
+    <td>Table Cell 1</td>
+    <td>Table Cell 2</td>
+    <td>Table Cell 3</td>
+    <td>Table Cell 4</td>
+    <td>Table Cell 5</td>
+  </tr>
+  <tr>
+    <td>Table Cell 1</td>
+    <td>Table Cell 2</td>
+    <td>Table Cell 3</td>
+    <td>Table Cell 4</td>
+    <td>Table Cell 5</td>
+  </tr>
+  <tr>
+    <td>Table Cell 1</td>
+    <td>Table Cell 2</td>
+    <td>Table Cell 3</td>
+    <td>Table Cell 4</td>
+    <td>Table Cell 5</td>
+  </tr>
+  <tr>
+    <td>Table Cell 1</td>
+    <td>Table Cell 2</td>
+    <td>Table Cell 3</td>
+    <td>Table Cell 4</td>
+    <td>Table Cell 5</td>
+  </tr>
+  </tbody>
+</table>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Heading 1<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Heading 2<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Heading 3<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Heading 4<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Heading 5<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tfoot&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Footer 1<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Footer 2<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Footer 3<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Footer 4<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Footer 5<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tfoot&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 1<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 2<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 3<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 4<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 5<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 1<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 2<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 3<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 4<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 5<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 1<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 2<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 3<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 4<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 5<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 1<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 2<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 3<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 4<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Table Cell 5<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div></div></div><div class="cortana-content">          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    
+      <script type="text/javascript" src="./js/jquery.min.js"></script>
+    
+      <script type="text/javascript" src="./js/store2.min.js"></script>
+    
+      <script type="text/javascript" src="./js/slidebars.min.js"></script>
+    
+      <script type="text/javascript" src="./js/slidenav.js"></script>
+    
+      <script type="text/javascript" src="./js/app.js"></script>
+    
+  
+
+  <!-- Source Components -->
+  
+
+</body>
+</html>

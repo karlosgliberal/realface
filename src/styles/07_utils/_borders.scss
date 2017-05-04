@@ -1,0 +1,43 @@
+$color-twitter: #00A9DB;
+$color-facebook: #2163A0;
+$color-instagram: #F6A623;
+@mixin bg-redes($color) {
+  border-bottom: 1px solid $color;
+  border-left  : 1px solid $color;
+  border-right :: 1px solid $color;
+}
+
+.u-b-b {
+  border-bottom: 1px solid $graylight;
+}
+
+.u-b-b-xs {
+  @include media-breakpoint-down(xs) {
+    border-bottom: 1px solid $white;
+  }
+  border-bottom: 1px solid $graylight;
+}
+
+.u-b-t {
+  border-top: 1px solid $graylight;
+}
+
+.u-b-t-red {
+  border-top: 1px solid $red;
+}
+
+.u-b-b-red {
+  border-bottom: 1px solid $red;
+}
+
+.u-b-twitter {
+  @include bg-redes($color-twitter);
+}
+
+.u-b-instagram {
+  @include bg-redes($color-instagram);
+}
+
+.u-b-facebook {
+  @include bg-redes($color-facebook);
+}

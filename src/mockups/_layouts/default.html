@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+{% include head.html %}
+
+<body class="body">
+  <div class="container-content">
+    {% include header.html %}
+  </div>
+
+
+  <div class="content container-content">
+    <main class="site-main main-fixed">
+      {{ content }}
+    </main>
+  </div>
+  <div class="content container-content">
+    {% include footer.html %}
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+  <script src="/js/vendor.js"></script>
+  <script src="/js/app.js"></script>
+  <script type="text/javascript">
+
+var vid = document.getElementById('videoel'),
+vidReady = false;
+var defaultTok = 1, defaultNumNulls = 20;
+var tok = defaultTok, people = [],  defaultPerson = -1, images = [], training = false;
+
+var numNulls, sentTimes, receivedTimes;
+var socket, socketName;
+
+
+if (navigator.getUserMedia) {
+  var videoSelector = {video : true};
+  navigator.getUserMedia(videoSelector, umSuccess, function() {
+    alert("Error fetching video from webcam");
+  });
+} else {
+  alert("No webcam detected.");
+}
+
+// createSocket("ws://facerec.cmusatyalab.org:9000", "CMU");
+createSocket("ws://realface.biko2.info", "Local");
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/*doc
+---
+title: Filigrana
+name: filigrana
+category: Componentes - Filigrana
+---
+
+La filigrana se oculta en dispositivos pequeños y se puede rotar con la clase filigrana-dibujo_rotate
+
+```html_example
+
+<div class="filigrana-container hidden-md-down">
+  <div class="filigrana  mx-auto"></div>
+</div>
+
+<div class="filigrana-container hidden-md-down">
+  <div class="filigrana filigrana-dibujo_rotate mx-auto"></div>
+</div>
+
+```
+
+*/
+.filigrana {
+  background-image : url("../images/itagliatella.svg");
+  background-repeat: no-repeat;
+  width            : 220px;
+  height           : 85px;
+}
+
+.filigrana--home {
+  background-image : url("../images/itagliatella-home.svg");
+  background-repeat: no-repeat;
+  width            : 220px;
+  height           : 85px;
+}
+
+.filigrana-dibujo_rotate {
+  @include rotate(180);
+}

@@ -1,0 +1,25 @@
+.block--container {
+  height: 100%;
+}
+
+.block--picture {
+  position: relative;
+}
+
+.block--title {
+  font-family: $font-family-bembo-semi;
+  font-weight: bold;
+  font-size  : 28px;
+  line-height: 1.2;
+}
+
+.block--date {
+  color      : $ocher;
+  font-family: $font-family-daxoffc-medi;
+  font-size  : $font-size-mini;
+}
+
+.block--link {
+  transform: translateY(-140%);
+  display  : inline-block;
+}

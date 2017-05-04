@@ -1,0 +1,53 @@
+/*Colores*/
+$red: #811c19;
+$redlight: #8c1713;
+$ocher: #ad713a;
+$ochervibrant: #B47506;
+$yellow: #fed775;
+$grayverylight: #f8f8f8;
+$graylight: #ebe9e5;
+$gray: #d6d6d6;
+$graydark: #726c74;
+$graydarksoft: #515151;
+$grayverydarke: #2f2f2f;
+$white: #ffffff;
+$grayblue: #F9F9F9;
+/* Espacios */
+$spacing: ( -3: 5px, -2: 10px, -1: 15px, base: 20px, 1: 25px, 2: 30px, 3: 35px, 4: 40px, );
+/* Fuentes */
+$font-family-bembo: "bembo", "copernicus", Georgia, "Times New Roman", Times, serif;
+$font-family-bembo-semi: "bembostd-semibold", "copernicus", Georgia, "Times New Roman", Times, serif;
+$font-family-sans: "daxoffc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-bold: "daxoffc-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-daxoffc-medi: "daxoffc-medi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-root: 14px;
+/* Layout */
+$container-max-widths: ( sm: 576px, md: 720px, lg: 960px, xl: 1140px );
+/* Line height */
+$line-height: 1.5;
+$line-height-xs: 1;
+/*Tamaños temporales*/
+$font-size-mini: 14px;
+$font-size-root: 16px;
+$font-size-xl: 24px;
+$font-size-mb: 22px;
+$font-size-lg: 18px;
+$font-size-md: 16px;
+$font-size-base: $font-size-root;
+$font-size-sm: 12px;
+$font-size-xs: 11px;
+$font-size-big: 28px;
+/*Bootstrap Custom conf*/
+$grid-gutter-width-base: 20px;
+
+.container-fluid {
+  padding-left    : 0;
+  padding-right   : 0;
+  background-color: white;
+}
+
+.container-content {
+  max-width       : 1700px !important;
+  background-color: white;
+  margin          : 0 auto;
+}

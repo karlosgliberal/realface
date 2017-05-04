@@ -1,0 +1,46 @@
+.home--twitter {
+  background-color   : #00A9DB;
+  padding            : 10px 20px;
+  background-image   : url('../images/bg-twitter.png');
+  background-repeat  : no-repeat;
+  background-position: 96% 123%;
+}
+
+.home--instagram {
+  background-color   : #F6A623;
+  padding            : 10px 20px;
+  background-image   : url('../images/bg-instagram.png');
+  background-repeat  : no-repeat;
+  background-position: 95% 165%;
+}
+
+.home--facebook {
+  background-color   : #2163A0;
+  padding            : 10px 20px;
+  background-image   : url('../images/bg-facebook.png');
+  background-repeat  : no-repeat;
+  background-position: 95% 208%;
+}
+
+.home--social__title {
+  font-family: $font-family-bembo-semi;
+  font-size  : $font-size-big;
+  color      : $white;
+  line-height: 1;
+}
+
+.home--social__subtitle {
+  font-family: $font-family-sans;
+  font-size  : $font-size-md;
+  color      : $white;
+}
+
+.home--social__number {
+  font-size   : $font-size-number;
+  font-family : $font-family-daxoffc-medi;
+  padding-left: 20px;
+}
+
+.section--social {
+  padding: 100px 0;
+}

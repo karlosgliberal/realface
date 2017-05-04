@@ -1,0 +1,72 @@
+.pastas--img {
+  max-width: 120px;
+}
+
+.pastas--home {
+  display       : flex;
+  flex-wrap     : wrap;
+  flex-direction: row;
+  list-style    : none;
+  padding       : 0;
+  @include media-breakpoint-down(xs) {
+    padding-left  : 15px;
+    flex-direction: column;
+  }
+}
+
+.pastas--home__item {
+  flex        : 1 0 17%;
+  @include media-breakpoint-down(xs) {}
+  margin-right: 20px;
+}
+
+.pastas--item {
+  flex        : 1 0 19%;
+  @include media-breakpoint-down(xs) {}
+  margin-right: 20px;
+}
+
+.container-items {
+  display  : flex;
+  flex-wrap: wrap;
+}
+// TEMPORAL AJUSTES TAMAÑOS SECCIONES
+
+.section--busqueda {
+  @include media-breakpoint-up(lg) {
+    background-image   : url('../images/bg-restaurante.png');
+    background-position: center 3%;
+  }
+  @include media-breakpoint-down(lg) {
+    background-position: center 3%;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 50px;
+    padding-top   : 0;
+  }
+  background-repeat  : no-repeat;
+  padding            : 80px 0;
+  background-position: center 3%;
+}
+
+.seccion-form {
+  @include media-breakpoint-up(md) {
+    background-image: url('../images/bg-busqueda.png');
+  }
+  background-position: 96% 114%;
+  background-repeat  : no-repeat;
+  padding            : 57px 0 10px;
+  @include media-breakpoint-down(xs) {
+    padding: 35px 0 10px;
+  }
+}
+
+.form--search {
+  width: 60%;
+  @include media-breakpoint-down(xs) {}
+}
+
+.icon--ubic {
+  position: relative;
+  top     : 7px;
+}

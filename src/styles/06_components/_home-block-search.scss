@@ -1,0 +1,103 @@
+.u-divider--red {
+  border-bottom: 1px solid $red;
+  width        : 70px;
+  display      : inline-block;
+}
+
+.divider--red {
+  width  : 70px;
+  padding: 25px 0;
+}
+
+.busqueda--home__list {
+  text-align  : center;
+  list-style  : none;
+  padding-left: 0;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    color       : $red;
+    font-size   : $font-size-mini;
+    padding-left: 10px;
+    @include media-breakpoint-up(sm) {
+      padding-left: 24px;
+    }
+  }
+}
+
+.busqueda--home__plato {
+  border : 1px solid $gray;
+  margin : 15px;
+  padding: 35px;
+  height : 91%;
+
+  :hover {
+    color: $red;
+  }
+
+  img {
+    transition: all 0.3s;
+  }
+}
+
+.busqueda--home__link:hover {
+  color  : $red;
+  opacity: 1;
+
+  img {
+    transform: scale(1.09);
+  }
+
+  .busqueda--home__platosub {
+    color: $red !important;
+  }
+}
+
+.busqueda--home__platosub {
+  color: $graydark;
+}
+
+.home--location {
+  padding-top: 35px;
+}
+
+.buscador-ubicacion__home {
+  position: relative;
+  top     : -5px;
+  left    : 5px;
+}
+
+.busqueda--home__platowrap {
+  display: inline-block;
+  height : 100%;
+}
+
+.busqueda--home__platotitle {
+  font-size  : $font-size-lg;
+  font-family: $font-family-daxoffc-medi;
+}
+
+.home--search {
+  background-image   : url('../images/bg-home-plato.png');
+  background-repeat  : no-repeat;
+  background-position: bottom;
+  background-size    : contain;
+  padding-bottom     : 155px;
+  padding-top        : 50px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom  : 10px;
+    background-image: none;
+  }
+}
+
+.form--home {
+  display: flex;
+  width  : 100%;
+}
+
+.form--home__wrap {
+  width: 50px;
+}

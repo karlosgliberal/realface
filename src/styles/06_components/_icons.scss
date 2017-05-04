@@ -1,0 +1,105 @@
+.icon {
+  svg {
+    /* Allows sizing by changing the icon’s font-size */
+    // width: 20px; height: 20px;
+    /* Nice visual alignment for icons alongside text */
+    vertical-align: baseline;
+    /* Default path fill = value of the color property */
+    /* Paths and strokes that overflow the viewBox can show in IE.
+    If you use normalize.css, it already sets this. */
+    overflow      : hidden;
+  }
+}
+
+.icon-mini {
+  width : 20px;
+  height: 20px;
+}
+
+.icon-normal {
+  width : 25px;
+  height: 25px;
+}
+
+.icon-big {
+  width : 30px;
+  height: 30px;
+}
+
+.icon-player {
+  width : 22px;
+  height: 22px;
+}
+
+.icon-payments {
+  width : 53px;
+  height: 33px;
+}
+
+.icon-search {
+  width : 20px;
+  height: 26px;
+}
+
+.icon-node {
+  width : 45px;
+  height: 45px;
+}
+
+.icon-share {
+  width : 50px;
+  height: 50px;
+}
+
+.icon-share__medium {
+  width : 40px;
+  height: 40px;
+}
+
+.icon-logohome {
+  width : 254px;
+  height: 100%;
+  @include media-breakpoint-up(sm) {
+    width: 435px;
+  }
+}
+
+.icon-search__marker {
+  width       : 17px;
+  height      : 18px;
+  stroke-width: 4px;
+  stroke      : $black;
+  fill        : white;
+  position    : relative;
+  top         : 4px;
+  margin-right: 5px;
+}
+
+.icon-search__list {
+  width       : 22px;
+  height      : 22px;
+  stroke-width: 4px;
+  position    : relative;
+  stroke      : $black;
+  fill        : white;
+  top         : 6px;
+  margin-right: 5px;
+}
+
+.icon-search__listado {
+  width       : 22px;
+  height      : 22px;
+  stroke-width: 4px;
+  stroke      : $black;
+  fill        : white;
+  position    : relative;
+  top         : 5px;
+  margin-right: 5px;
+}
+
+.icon-stores {
+  stroke: $white;
+  fill  : $white;
+  width : 172px;
+  height: 50px;
+}

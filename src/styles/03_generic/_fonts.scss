@@ -1,0 +1,33 @@
+$pathfonts: "../fonts/";
+@font-face {
+  font-family: 'daxoffc';
+  src        : url('#{$pathfonts}daxoffc/daxoffc.eot');
+  src        : url('#{$pathfonts}daxoffc/daxoffc.eot?#iefix') format('embedded-opentype'), url('#{$pathfonts}daxoffc/daxoffc.woff') format('woff'), url('#{$pathfonts}daxoffc/daxoffc.ttf') format('truetype'), url('#{$pathfonts}daxoffc/daxoffc.svg#webfontregular') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'daxoffc-bold';
+  src        : url('#{$pathfonts}daxoffc-bold/daxoffc-bold.eot?#iefix') format('embedded-opentype'), url('#{$pathfonts}daxoffc-bold/daxoffc-bold.woff') format('woff'), url('#{$pathfonts}daxoffc-bold/daxoffc-bold.ttf') format('truetype'), url('#{$pathfonts}daxoffc-bold/daxoffc-bold.svg#daxoffc-bold') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'daxoffc-medi';
+  src        : url('#{$pathfonts}daxoffc-medi/daxoffc-medi.eot?#iefix') format('embedded-opentype'), url('#{$pathfonts}daxoffc-medi/daxoffc-medi.woff') format('woff'), url('#{$pathfonts}daxoffc-medi/daxoffc-medi.ttf') format('truetype'), url('#{$pathfonts}daxoffc-medi/daxoffc-medi.svg#daxoffc-medi') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'bembostd-semibold';
+  src        : url('#{$pathfonts}bembostd-semibold/bembostd-semibold.eot?#iefix') format('embedded-opentype'), url('#{$pathfonts}bembostd-semibold/bembostd-semibold.otf') format('opentype'), url('#{$pathfonts}bembostd-semibold/bembostd-semibold.woff') format('woff'), url('#{$pathfonts}bembostd-semibold/bembostd-semibold.ttf') format('truetype'), url('#{$pathfonts}bembostd-semibold/bembostd-semibold.svg#bembostd-semibold') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'bembo';
+  src        : url('#{$pathfonts}bembo/bembo.eot');
+  src        : url('#{$pathfonts}bembo/bembo.eot?#iefix') format('embedded-opentype'), url('#{$pathfonts}bembo/bembo.woff') format('woff'), url('#{$pathfonts}bembo/bembo.ttf') format('truetype'), url('#{$pathfonts}bembo/bembo.svg#webfontregular') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}

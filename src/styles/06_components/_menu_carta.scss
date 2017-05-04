@@ -1,0 +1,25 @@
+.carta--list {
+  padding-left   : 0;
+  list-style-type: none;
+}
+
+.carta--list__item {
+  // border : 1px solid red;
+  padding: 20px;
+  width  : 185px;
+  @include media-breakpoint-down(lg) {
+    width : 145px;
+    margin: 0 17px;
+  }
+  margin : 0 15px;
+  display: inline-block;
+
+  a {
+    color      : $redlight;
+    font-weight: bold;
+  }
+
+  :hover {
+    color: $redlight;
+  }
+}

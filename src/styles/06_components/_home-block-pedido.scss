@@ -1,0 +1,41 @@
+.section--pedido {
+  padding            : 100px 0 155px;
+  @include media-breakpoint-down(xs) {
+    padding            : 50px 0;
+    background-position: 34% 50%;
+  }
+  background-image   : url('../images/bg-pide.jpg');
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+
+  .container-fluid {
+    background-color: transparent;
+  }
+}
+
+.pedidos__pide {
+  background-image   : url('../images/bg-pedido.png');
+  background-repeat  : no-repeat;
+  background-position: 0 84%;
+  padding-left       : 100px;
+}
+
+.pedidos__recoge {
+  background-image   : url('../images/bg-recoge.png');
+  background-repeat  : no-repeat;
+  background-position: 0 84%;
+  padding-left       : 100px;
+}
+
+.pedidos__disfruta {
+  background-image   : url('../images/bg-disfruta.png');
+  background-repeat  : no-repeat;
+  background-position: 0 84%;
+  padding-left       : 100px;
+}
+
+.pedidos__title {
+  font-family: $font-family-sans;
+  font-size  : $font-size-xl;
+}

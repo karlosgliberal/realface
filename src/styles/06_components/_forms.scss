@@ -1,0 +1,29 @@
+@import "../../../node_modules/bootstrap/scss/_forms";
+
+.form-search {
+  border          : 1px solid #ECE9E6;
+  background-color: $grayverylight;
+  padding         : 15px;
+  font-family     : $font-family-sans;
+  display         : block;
+  width           : 100%;
+}
+
+.filtros--wrap {
+  display       : flex;
+  flex-wrap     : wrap;
+  flex-direction: row;
+  padding-top   : 20px;
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+  }
+}
+
+.filtro--item {
+  flex        : 1 0 19%;
+  margin-right: 15px;
+}
+
+legend {
+  display: none;
+}

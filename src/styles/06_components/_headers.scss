@@ -1,0 +1,33 @@
+.header-banner {
+  width              : 100%;
+  overflow           : hidden;
+  position           : relative;
+  background-size    : cover;
+  background-position: center;
+  background-repeat  : none;
+  @include media-breakpoint-down(sm) {
+    height: 200px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 350px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 530px;
+  }
+}
+
+.flex-center-vertically {
+  display        : flex;
+  justify-content: center;
+  flex-direction : column;
+  @include media-breakpoint-down(sm) {
+    height: 200px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 350px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 530px;
+  }
+  text-align     : center;
+}
