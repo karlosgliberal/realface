@@ -1,6 +1,7 @@
 'use strict';
 
 var $ = jQuery.noConflict();
+var watch = $("#watch1").slotMachine({randomize:function(activeElementIndex){}});
 window.requestAnimFrame = (function() {
     return window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -51,20 +52,9 @@ function sendFrameLoop() {
         socket.send(JSON.stringify(msg));
         tok--;
     }
-    setTimeout(function() {requestAnimFrame(sendFrameLoop)}, 3000);
+    setTimeout(function() {requestAnimFrame(sendFrameLoop)}, 2000);
 }
 
-
-function updateRTT() {
-    var diffs = [];
-    for (var i = 5; i < defaultNumNulls; i++) {
-        diffs.push(receivedTimes[i] - sentTimes[i]);
-    }
-    // $("#rtt-"+socketName).html(
-    //     jStat.mean(diffs).toFixed(2) + " ms (σ = " +
-    //         jStat.stdev(diffs).toFixed(2) + ")"
-    // );
-}
 
 function sendState() {
     var msg = {
@@ -81,7 +71,6 @@ function createSocket(address, name) {
     socketName = name;
     socket.binaryType = "arraybuffer";
     socket.onopen = function() {
-        $("#serverStatus").html("Connected to " + name);
         sentTimes = [];
         receivedTimes = [];
         tok = defaultTok;
@@ -91,13 +80,12 @@ function createSocket(address, name) {
         sentTimes.push(new Date());
     }
     socket.onmessage = function(e) {
-        // console.log(e.data);
+
         j = JSON.parse(e.data)
         if (j.type == "NULL") {
             receivedTimes.push(new Date());
             numNulls++;
             if (numNulls == defaultNumNulls) {
-                updateRTT();
                 sendState();
                 sendFrameLoop();
                 // console.timeEnd("startPage")
@@ -109,7 +97,6 @@ function createSocket(address, name) {
             tok++;
         } else if (j.type == "DB_LIST") {
             // alert("DB_LIST: " + j.list.length);
-            // console.log(j)
             var loopCnt = 0
             // console.time("addtimer")
             for (var i = 0; i < j.list.length; i++) {
@@ -140,6 +127,7 @@ function createSocket(address, name) {
             var h = "Last updated: " + (new Date()).toTimeString();
             h += "<ul>";
             var len = j.identities.length
+            console.log(j.identities[0]);
             if (len > 0) {
                 for (var i = 0; i < len; i++) {
                     var identity = "Unknown";
@@ -154,21 +142,19 @@ function createSocket(address, name) {
             }
             h += "</ul>"
             if (typeof  identity != 'undefined'){
-
               $('.caras li img').removeClass('green');
               $('#'+ identity+' img').addClass('green');
             } else {
               $('.caras').closest('li').removeClass('green');
             }
+            watch._active = j.identities[0];
+            watch.next({delay: 2000});
             $("#peopleInVideo").html(h);
         } else if (j.type == "ANNOTATED") {
+
             $("#detectedFaces").html(
                 "<img src='" + j['content'] + "' width='430px'></img>"
             )
-        } else if (j.type == "TSNE_DATA") {
-            BootstrapDialog.show({
-                message: "<img src='" + j['content'] + "' width='100%'></img>"
-            });
         } else {
             console.log("Unrecognized message type: " + j.type);
         }
@@ -197,7 +183,6 @@ function umSuccess(stream) {
 }
 
 
-var watch = $("#watch1").slotMachine();
 
 $("#slotMachineButtonPrev").click(function(){
   console.log('movida');
@@ -205,7 +190,9 @@ $("#slotMachineButtonPrev").click(function(){
 });
 
 $("#slotMachineButtonNext").click(function(){
-  watch.next();
+  console.log(watch);
+  watch._active = 0;
+  watch.next({delay: 2000});
 });
 
 
