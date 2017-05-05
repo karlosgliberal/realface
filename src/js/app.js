@@ -51,7 +51,7 @@ function sendFrameLoop() {
       socket.send(JSON.stringify(msg));
       tok--;
     }
-    setTimeout(function() {requestAnimFrame(sendFrameLoop)}, 2000);
+    setTimeout(function() {requestAnimFrame(sendFrameLoop)}, 500);
   }
 
 
