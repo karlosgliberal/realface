@@ -179,7 +179,7 @@ function sendFrameLoop() {
   function move() {
     var elem = document.getElementById("myBar");
     var width = 10;
-    var id = setInterval(frame, 100);
+    var id = setInterval(frame, 140);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -219,12 +219,12 @@ function sendFrameLoop() {
           $('#detectedFaces').rotate(-rotation);
           $('#watch1').rotate(rotation);
           setTimeout(function(){
-            $('#video').hide();
+            //$('#video').hide();
             $('#share').show();
-          }, 4000);
+          }, 500);
         }, 30*2+45);/* Shutter speed (double & add 45) */
-      }, 9000);
-    }, 300000);
+      }, 15000);
+    }, 3000);
 
   }
 
