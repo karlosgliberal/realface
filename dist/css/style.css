@@ -6131,6 +6131,16 @@ input {
   position: relative;
   top: -3px; }
 
+.share {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 34vh; }
+
+.title-section-share {
+  font-weight: bold;
+  text-transform: uppercase; }
+
 .m-0 {
   margin: 0 0 !important; }
 
@@ -7620,8 +7630,8 @@ input {
   transition: all 30ms ease-in;
   /* Shutter speed */
   position: fixed;
-  height: 0%;
-  width: 0%;
+  height: 0;
+  width: 0;
   pointer-events: none;
   background-color: white;
   /* Shutter Color */
