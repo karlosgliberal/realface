@@ -145,6 +145,7 @@ function sendFrameLoop() {
         } else {
           $('.caras').closest('li').removeClass('green');
         }
+        console.log("nombre: "+ identity + " id: "+ j.identities[0]);
         watch._active = j.identities[0];
         watch.next({delay: 2000});
         $("#peopleInVideo").html(h);
@@ -223,7 +224,7 @@ function sendFrameLoop() {
           }, 4000);
         }, 30*2+45);/* Shutter speed (double & add 45) */
       }, 9000);
-    }, 3000);
+    }, 300000);
 
   }
 
