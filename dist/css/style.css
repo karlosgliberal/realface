@@ -4024,10 +4024,22 @@ h6 {
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  font-size: 43px;
+  font-size: 40px;
   line-height: 1.2; }
   @media (min-width: 992px) {
     .title-section-big {
+      text-align: left; } }
+
+.title-section-jugador {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 37px;
+  line-height: 1.2; }
+  @media (min-width: 992px) {
+    .title-section-jugador {
       text-align: left; } }
 
 .title-section-n {
@@ -6047,8 +6059,8 @@ a:hover {
 .ramos {
   background-image: url("../images/ramos.jpg"); }
 
-.zidane {
-  background-image: url("../images/zidane.jpg"); }
+.isco {
+  background-image: url("../images/isco.jpg"); }
 
 .cc-selector input:active + .jugador-cc,
 .cc-selector-2 input:active + .jugador-cc {
@@ -6105,7 +6117,7 @@ body {
   cursor: pointer; }
 
 .position-home {
-  transform: translateY(270px); }
+  transform: translateY(158px); }
 
 .pl-10 {
   padding-left: 10px; }
@@ -6121,7 +6133,7 @@ input {
 
 #detectedFaces img {
   position: relative;
-  left: -33px;
+  left: -47px;
   z-index: 1; }
 
 .jugadores-img img {
@@ -6129,7 +6141,13 @@ input {
 
 .aaa {
   position: relative;
-  top: -3px; }
+  top: -23px;
+  z-index: -4444444; }
+
+.bbb {
+  position: relative;
+  top: -38px;
+  z-index: 9999999999; }
 
 .share {
   text-align: center;
@@ -7612,8 +7630,8 @@ input {
   animation-name: tagliadownarrow; }
 
 #myProgress {
-  width: 100%;
-  background-color: grey; }
+  width: 95%;
+  margin: 12px 10px 0; }
 
 #myBar {
   width: 10%;
@@ -7623,7 +7641,7 @@ input {
   /* To center it horizontally (if you want) */
   line-height: 30px;
   /* To center it vertically */
-  color: white; }
+  color: #ffffff; }
 
 #shutter {
   opacity: 0;

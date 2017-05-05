@@ -35,7 +35,21 @@ h6 {
         text-align: left;
     }
     // @include typi($section-title-big);
-    font-size     : 43px;
+    font-size     : 40px;
+    line-height   : 1.2;
+}
+
+.title-section-jugador {
+    font-family   : $font-oswald;
+    font-weight   : bold;
+    color         : $black;
+    text-transform: uppercase;
+    text-align    : center;
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+    }
+    // @include typi($section-title-big);
+    font-size     : 37px;
     line-height   : 1.2;
 }
 

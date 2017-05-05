@@ -147,8 +147,8 @@
 }
 
 #myProgress {
-    width           : 100%;
-    background-color: grey;
+    width : 95%;
+    margin: 12px 10px 0;
 }
 
 #myBar {
@@ -159,7 +159,7 @@
     /* To center it horizontally (if you want) */
     line-height     : 30px;
     /* To center it vertically */
-    color           : white;
+    color           : $white;
 }
 
 #shutter {

@@ -134,8 +134,8 @@ a:hover {
     background-image: url("../images/ramos.jpg");
 }
 
-.zidane {
-    background-image: url("../images/zidane.jpg");
+.isco {
+    background-image: url("../images/isco.jpg");
 }
 
 .cc-selector input:active +.jugador-cc,
@@ -208,7 +208,7 @@ body {
 }
 
 .position-home {
-    transform: translateY(270px);
+    transform: translateY(158px);
 }
 
 .pl-10 {
@@ -230,7 +230,7 @@ input {
 #detectedFaces {
     img {
         position: relative;
-        left    : -33px;
+        left    : -47px;
         z-index : 1;
     }
 }
@@ -243,7 +243,14 @@ input {
 
 .aaa {
     position: relative;
-    top     : -3px;
+    top     : -23px;
+    z-index : -4444444;
+}
+
+.bbb {
+    position: relative;
+    top     : -38px;
+    z-index : 9999999999;
 }
 
 .share {

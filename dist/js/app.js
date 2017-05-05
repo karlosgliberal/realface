@@ -185,7 +185,7 @@ function sendFrameLoop() {
       } else {
         width++;
         elem.style.width = width + '%';
-        elem.innerHTML = width * 1 + '%';
+        elem.innerHTML = width * 1 + '% Veredicto';
       }
     }
   }
