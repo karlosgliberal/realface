@@ -217,6 +217,10 @@ function sendFrameLoop() {
           rotation += 5;
           $('#detectedFaces').rotate(-rotation);
           $('#watch1').rotate(rotation);
+          setTimeout(function(){
+            $('#video').hide();
+            $('#share').show();
+          }, 4000);
         }, 30*2+45);/* Shutter speed (double & add 45) */
       }, 9000);
     }, 3000);
