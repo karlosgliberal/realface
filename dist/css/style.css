@@ -7608,12 +7608,33 @@ input {
 #myBar {
   width: 10%;
   height: 30px;
-  background-color: #4CAF50;
+  background-color: #004D96;
   text-align: center;
   /* To center it horizontally (if you want) */
   line-height: 30px;
   /* To center it vertically */
   color: white; }
+
+#shutter {
+  opacity: 0;
+  transition: all 30ms ease-in;
+  /* Shutter speed */
+  position: fixed;
+  height: 0%;
+  width: 0%;
+  pointer-events: none;
+  background-color: white;
+  /* Shutter Color */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
+
+#shutter.on {
+  opacity: 1;
+  /* Shutter Transparency */
+  height: 100%;
+  width: 100%; }
 
 .form-control {
   display: block;

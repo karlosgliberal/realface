@@ -1,7 +1,7 @@
 'use strict';
 
 var $ = jQuery.noConflict();
-var watch = $("#watch1").slotMachine({randomize:function(activeElementIndex){}});
+var watch = $("#watch1").slotMachine();
 window.requestAnimFrame = (function() {
   return window.requestAnimationFrame ||
   window.webkitRequestAnimationFrame ||
@@ -168,6 +168,30 @@ function sendFrameLoop() {
     }
   }
 
+  var rotation = 0;
+
+  $.fn.rotate = function(degrees) {
+    $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
+    return $(this);
+  };
+
+  function move() {
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 100);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+        elem.innerHTML = width * 1 + '%';
+      }
+    }
+  }
+
+
+
   function umSuccess(stream) {
     if (vid.mozCaptureStream) {
       vid.mozSrcObject = stream;
@@ -178,25 +202,28 @@ function sendFrameLoop() {
     vid.play();
     vidReady = true;
     sendFrameLoop();
-    function move() {
-    var elem = document.getElementById("myBar");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-            elem.innerHTML = width * 1 + '%';
-        }
-    }
-}
-move();
-    setInterval(function(){
-       vid.pause();
-    }, 10000);
+
+    var barraId = setTimeout(function(){
+      $('#myProgress').show();
+      move();
+      setTimeout(function(){
+        vid.pause();
+        socket.close()
+        $('#shutter').addClass('on');
+        $('audio')[0].play();
+        $('#myProgress').hide();
+        setTimeout(function() {
+          $('#shutter').removeClass('on');
+          rotation += 5;
+          $('#detectedFaces').rotate(-rotation);
+          $('#watch1').rotate(rotation);
+        }, 30*2+45);/* Shutter speed (double & add 45) */
+      }, 9000);
+    }, 3000);
+
   }
+
+
 
   $("#slotMachineButtonPrev").click(function(){
     console.log('movida');
@@ -215,6 +242,11 @@ move();
 
   //init waypoint para el destacado de restaurante
   $(document).ready(function(){
+
+
+
+
+
 
     var eleccionJugador;
 

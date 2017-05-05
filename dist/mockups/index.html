@@ -19,22 +19,16 @@
 
     <div class="">
       <section id="intro" class="pregunta pt-5 ">
+
   <div class="container">
     <h2 class="title-section-big pb-5"> ¿A que jugador te pareces?</h2>
-    <div class="row">
-      <div class="col-12">
-        <p class="px-4 pb-3">Apuesta, quien creres que se parece más de la plantilla del real madrid a ti. Hemos entrenado una inteligancia artificial  con las caras de los jugadores del Real madrid y la compararemo </p>
-
-
-      </div>
-    </div>
     <div class="position-home">
       <div id="botonEntrada" class="btn-face">Siguiente</div>
     </div>
   </div>
 </section>
 
-<section class="jugadores--lista hidden ">
+<section id="jugadores" class="jugadores--lista hidden ">
   <div class="container">
     <h3 class="title-section-big pt-3 pb-3"> Seleciona un jugador</h3>
     <div class="row p-lr-10">
@@ -96,13 +90,9 @@
       </div>
     </div>
   </div>
-  <div class="container">
-
-    <div class="btn-face mb-3">Siguiente</div>
-  </div>
 </section>
   <!-- Watch example -->
-  <section id ="jugadores" class="jugadores--lista hidden">
+  <section id ="video" class="jugadores--lista hidden">
   <div class="container">
     <div class="row">
       <video id="videoel" class="js-hidden" width="400" height="300" preload="auto" loop></video>
@@ -126,9 +116,11 @@
               </div>
             </div>
           </div>
-          <div id="myProgress">
+          <div id="myProgress" class="hidden">
             <div id="myBar"></div>
           </div>
+          <audio src="http://www.soundjay.com/mechanical/camera-shutter-click-08.mp3"></audio>
+          <div id="shutter"></div>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -162,7 +154,7 @@ var socket, socketName;
 
 
 
-// createSocket("ws://facerec.cmusatyalab.org:9000", "CMU");
+// createSocket("ws://localhost:9000", "CMU");
 createSocket("ws://realface.biko2.info", "Local");
 </script>
 </body>
